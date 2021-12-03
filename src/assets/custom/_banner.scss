@@ -1,0 +1,30 @@
+@mixin banner {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+  }
+
+  .products-banner {
+    background-image: url('https://images.unsplash.com/uploads/141247613151541c06062/c15fb37d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80');
+    @include banner;
+    height: 500px;
+}
+
+.home-banner {
+  background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80');
+  @include banner;
+  height: 500px;
+}
+
+.about-banner {
+  background-image: url('https://images.unsplash.com/photo-1560493676-04071c5f467b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80');
+  @include banner;
+  height: 500px;
+}
+
+.cart-banner {
+  background-image: url('https://i.imgur.com/GSbiig7.jpg');
+  @include banner;
+  height: 300px;
+}

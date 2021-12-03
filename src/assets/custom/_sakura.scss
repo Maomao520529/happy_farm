@@ -1,0 +1,181 @@
+.sakuraHome{
+    margin: 0;
+    /* 外邊距 */
+    padding: 0;
+    /* 內邊距 */
+    overflow: hidden;
+    /* 溢出隐藏 */
+    height: 100vh;
+    /*螢幕可視範圍高度的百分比*/
+}
+
+.longinLink {
+    position: absolute;
+    top: 80%;
+    transform: translateY(20%);
+    width: 100%;
+    text-align: center;
+    /*居中*/
+    z-index: 999;
+}
+
+.slogan{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 20em; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    border-right: .05em solid; 
+    animation: typing 15s steps(20), 
+    caret 0.5s steps(1) infinite;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes typing { 
+    from { width: 0; } 
+} 
+
+@keyframes caret { 
+    50% {border-color: transparent;} 
+}
+
+@media (max-width: 768px) { 
+    .slogan{
+        top: 70%;
+        left: 7%;
+        font-size: 22px;
+    } 
+}
+
+.set {
+    position: absolute;
+    /* 絕對定位 */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /*距上部 */
+    left: 0;
+    /*距左部 */
+}
+
+img {
+    width: 100px;
+    user-select: none;
+    /*不可選取*/
+}
+
+.set div {
+    position: absolute;
+    display: block;
+    /* 區塊元素 */
+}
+
+.set div:nth-child(1) {
+    /*第一個子元素*/
+    left: 20%;
+    animation: sakuraanimate 15s linear infinite;
+    /*動畫：name time 線性執行 重複*/
+    animation-delay: -7s;
+    /*等待時間*/
+}
+
+.set div:nth-child(2) {
+    left: 50%;
+    animation: sakuraanimate 15s linear infinite;
+    animation-delay: -5s;
+}
+
+.set div:nth-child(3) {
+    left: 70%;
+    animation: sakuraanimate 20s linear infinite;
+}
+
+.set div:nth-child(4) {
+    left: 0%;
+    animation: sakuraanimate 15s linear infinite;
+    animation-delay: -5s;
+}
+
+.set div:nth-child(5) {
+    left: 85%;
+    animation: sakuraanimate 18s linear infinite;
+    animation-delay: -10s
+}
+
+.set div:nth-child(6) {
+    left: 0%;
+    animation: sakuraanimate 12s linear infinite;
+}
+
+.set div:nth-child(7) {
+    left: 15%;
+    animation: sakuraanimate 14s linear infinite;
+}
+
+.set div:nth-child(8) {
+    left: 60%;
+    animation: sakuraanimate 15s linear infinite;
+}
+
+/* 動畫  */
+@keyframes sakuraanimate {
+    0% {
+        top: -10%;
+        opacity: 0;
+        /*透明度*/
+        transform: translateX(20px) rotate(0deg);
+        /*動作 X轴移動 旋轉*/
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(-20px) rotate(45deg);
+    }
+
+    40% {
+        transform: translateX(-20px) rotate(90deg);
+    }
+
+    60% {
+        transform: translateX(20px) rotate(130deg);
+    }
+
+    80% {
+        transform: translateX(-20px) rotate(180deg);
+    }
+
+    100% {
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+}
+
+.set2 {
+    transform: scale(2) rotateY(180deg);
+    /* 縮放  沿Y軸3d旋轉*/
+    filter: blur(2px);
+    /*模糊*/
+    z-index: 3;
+}
+
+.set3 {
+    transform: scale(0.8) rotateX(180deg);
+    /* 縮放  沿X軸3d旋轉*/
+    filter: blur(4px);
+    z-index: 2;
+}
+
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}

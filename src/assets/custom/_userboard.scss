@@ -1,0 +1,123 @@
+// input type=number去掉上下箭頭
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/* Firefox */
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+// navbar-toggler 去除藍色外框
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.cart-number{
+    top: -3px;
+    right: -4px;
+}
+.favorite-number {
+    top: -3px;
+    right: 0px;
+}
+
+.search-body{
+    position: relative;
+    left:40%; 
+}
+.search {
+    // border: 2px solid #20c997;
+    position: absolute;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:#a0faac83;
+    color:#20c997;
+    height:40px;
+    border-radius: 40px;
+    padding-bottom:10px;
+}
+
+.search-btn{
+    position: absolute;
+    right: -3%;
+    color:#20c997;
+    float:right;
+    background:#a0faac83;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:0.5s;
+    cursor:pointer;
+}
+.search-txt{
+    border:none;
+    background:none;
+    outline:none;
+    float:left;
+    padding:0;
+    color:#3b3c3d;
+    font-size:16px;
+    transition:0.5s;
+    line-height: 40px;
+    width:0px;
+}
+.search:hover > .search-btn{
+    background:#a0faac;
+    color:#20c997;
+}
+
+.search:hover > .search-txt{
+    width:240px;
+    padding:0 6px;
+}
+//  @media (max-width: 768px) { 
+//     // .nav {
+//     //     font-size: 2px;
+//     // }
+    
+// }
+
+.loading{
+    width: 76px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 45%;
+    margin: 0 auto;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+    to{transform: rotate(360deg);}
+}
+
+.loading span{
+    width: 32px;
+    height: 32px;
+    margin: 3px;
+}
+
+.loading span:nth-child(1){
+    background-color: #e5efc1;
+    border-radius: 50% 50% 0 50%;
+}
+.loading span:nth-child(2){
+    background-color: #a2d5ab;
+    border-radius: 50% 50% 50% 0;
+}
+.loading span:nth-child(3){
+    background-color: #39aea9;
+    border-radius: 50% 0 50% 50%;
+}
+.loading span:nth-child(4){
+    background-color: #557b83;
+    border-radius: 0 50% 50% 50%;
+}

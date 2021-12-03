@@ -1,0 +1,69 @@
+.box-shadow {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16); //水平移動  垂直移動  擴散   rgba
+    transition: box-shadow .3s;
+  }
+  
+  .box-shadow:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .24); //水平移動  垂直移動  擴散   rgba
+  }
+  
+  .card {
+      border-radius: 5%;
+      position: relative;
+      // color: #000;
+      // text-decoration: none;
+  }
+  .card-footer {
+    position: absolute;
+    padding: 2px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    border: 3px solid #a0faac;
+    border-radius: 3.5%;
+    background-color: rgba(3, 3, 3, 0.479);
+  
+  }
+  
+  .card-footer:hover {
+    opacity: 1;
+  }
+  // 產品資訊
+  .btn-many {
+    position: absolute;
+    top: 7.5rem;
+    left: 2.5rem;
+    width: 80%;
+  }
+  // 加入購物車
+  .btn-finish {
+    position: absolute;
+    bottom: 8.5rem;
+    left: 2.5rem;
+    width: 80%;
+  }
+  
+  .btn-many,
+  .btn-finish {
+    font-size: 17px;
+    text-align: center;
+    border-radius: 20px 20px;
+    vertical-align:  baseline;
+    border: 2px solid $green;
+    color: $green;
+    background-color: rgba(0, 0, 0, 0.568);
+  
+  }
+  
+  .btn-many:hover,
+  .btn-finish:hover {
+    border: 2px solid #a0faac;
+    color: #a0faac;
+    background-color: rgba(0, 0, 0, 0.568);
+  }
+  
+  .icon-star{
+   padding: 0.5rem;
+  }
+  

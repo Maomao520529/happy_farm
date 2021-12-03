@@ -1,0 +1,36 @@
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables"; //自定義
+@import "~bootstrap/scss/mixins";
+
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "~bootstrap/scss/bootstrap";
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./custom/sakura";
+@import "./custom/banner";
+@import "./custom/color";
+@import "./custom/userboard";
+@import "./custom/userproducts";
+
+// body {
+//     font-family: "Helvetica","Arial","LiHei Pro",
+//     "黑體-繁","微軟正黑體", sans-serif; 
+//     // margin: 0;
+//     // padding: 0;
+// //     background: url(https://sqimg.qq.com/qq_product_operations/im/imbanner/20180201/pcqq_bg.jpg)
+// //     no-repeat center center;
+// // background-size: cover;
+// }
+
+
+body {
+    background: url(https://i.imgur.com/u5pnHUg.png);
+    background-size: cover;
+}
